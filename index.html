@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Gerenciamento de Produtos</title>
+</head>
+
+<body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h1>Gerenciamento de Produtos</h1>
+        </div>
+    </header>
+
+    <!-- Seção para adicionar um novo item -->
+    <section class="newItem">
+        <label for="newSku">SKU:</label>
+        <input type="text" id="newSku" placeholder="ABC123" aria-label="Insira o SKU">
+
+        <label for="newObject">Nome:</label>
+        <input type="text" id="newObject" placeholder="PORTA FRIOS" aria-label="Insira o nome do produto">
+
+        <label for="newQuantity">Quantidade:</label>
+        <input type="text" id="newQuantity" placeholder="00" aria-label="Insira a quantidade">
+
+        <label for="newPrice">Valor R$</label>
+        <input type="text" id="newPrice" placeholder="00.00" aria-label="Insira o valor do produto">
+        <button onclick="newItem()" class="addBtn blue" aria-label="Adicionar produto">Adicionar</button>        
+    </section>
+
+    <!-- Seção para buscar total de produtos e quantidades -->
+    <section class="inventoryTotal">
+        <button onclick="getInventoryTotal()" class="totalBtn" aria-label="Buscar total de produtos e itens">
+            Buscar Total de Produtos e Itens
+        </button>
+        <p id="totalProdutos"></p>
+        <p id="totalItens"></p>
+    </section>
+
+    <!-- Seção da tabela com os produtos existentes -->
+    <section class="items">
+        <h2>Listagem de Produtos</h2>
+        <table id="myTable" aria-label="Tabela de produtos">
+            <thead>
+                <tr>
+                    <th>SKU</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px" alt="Ícone de lixeira" aria-label="Excluir item"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os itens serão inseridos dinamicamente aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Gerenciamento de Produtos &copy; 2024</p>
+    </footer>
+
+    <!-- Link para o arquivo de JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

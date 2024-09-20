@@ -1,0 +1,144 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #fffdfd;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de adicionar novo item */
+.newItem {
+    text-align: center;
+}
+
+.newItem input {
+    width: 120px;
+    margin-right: 10px; 
+}
+
+.newItem .addBtn {
+    background-color: #14742a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+/* Tabela de produtos */
+.items {
+    text-align: center;
+    overflow-x: auto; /* Tornar a tabela responsiva em dispositivos menores */
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+}
+
+.close {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: darkred;
+}
+
+/* Seção de atualização de item */
+.updateItem {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.updateItem input {
+    width: 200px;
+}
+
+.updateItem .updateBtn {
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.updateItem .updateBtn:hover {
+    background-color: #e0a800;
+}
+
+/* Foco nos botões para acessibilidade */
+button:focus {
+    outline: 2px solid #333;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #c7cbcf;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
