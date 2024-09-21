@@ -1,5 +1,7 @@
 # Meu Front
 
+O propósito dessa API é gerenciar produtos, permitindo operações básicas de inventário. 
+
 Este pequeno projeto que consiste em uma aplicação web para o gerenciamento de produtos, que interage com uma API desenvolvida em Flask e SQLAlchemy para armazenar, visualizar e remover produtos de um banco de dados. 
 
 # Funcionalidades principais: 
